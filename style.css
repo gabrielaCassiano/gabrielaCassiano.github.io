@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .h1logo {
     font-family: 'forte';
     color: #e45a96;
@@ -14,11 +17,15 @@
     height: 30px;
        
 }
+
 .navBar{
     border: #e45a96 1px solid;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: sticky;
+    top: 0px;
+    background-color: white;
 }
 .links {
     font-size: medium;
@@ -36,11 +43,18 @@ ul{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    transition: 0.5s;
 
     text-transform: uppercase;
     color: #e45a96 ;
     
     
+}
+.links a {
+    transition: 300ms;
+}
+.links a:hover{
+    color: #77ee68;
 }
 
 .menu{
@@ -49,7 +63,7 @@ ul{
     background-size: cover;
     background-position: right bottom;
     width: 100%;
-    height: 83vh;
+    height: 89vh;
    
 }
 #titulo{
@@ -75,30 +89,85 @@ ul{
     border: transparent;
     width: 140px;
     border-radius: 30px;
+    transition: 500ms;
     
 }
-.planos{
+
+#bot:hover{
+    background-color: #77ee68;
+    scale: 1.1;
+}
+
+.planos {
+    background-image: url('./fundo2.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh ;
+    justify-content: center;
+}
+.cards{
     display: flex; 
     justify-content: space-around;
-    color: #ffffff;
+    color: #e56f9c;
     padding-top: 50px;
+    gap: 20px;
+
 }
-#pl{
+.pl{
     border-radius: 12px;
-    background-color: #e45a96;
-    height: 350px;
+    background-color: #ffffff;
+    height: 380px;
     width: 400px;
     padding: 10px;
     box-sizing: border-box;
+    transition: 500ms;
 
+}
+.pl:hover{
+    scale: 1.05;
 }
 a{
     text-decoration: none;
-    color: #e45a96;
+    color: #e56f9c;
 }
 #p1{
     padding-top: 5px;
 }
-#pl h1 {
+.pl h1 {
     text-align: center;
+}
+.tituloCards h1{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-size: 40px;
+}
+.linha {
+    display: block;
+    height: 1px;
+    width: 23.5em;
+    background-color: #ccc;
+}
+.preco {
+    font-size: 40px;
+}
+.saibaMaisBtn {
+    background-color: #e45a96;
+    color: white;
+    padding: 25px;
+    font-size: 15px;
+    border: transparent;
+    width: 140px;
+    border-radius: 30px;
+    transition: 500ms;
+}
+.saibaMaisBtn:hover {
+    background-color: #77ee68;
+}
+
+.cora {
+    font-size: 40px;
+    position: relative;
+    bottom: 4px;
 }
